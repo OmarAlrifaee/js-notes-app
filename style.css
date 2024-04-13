@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: pink;
+  padding: 30px;
+  text-align: center;
+}
+.title {
+  text-align: center;
+}
+.title h1 {
+  color: white;
+  font-size: 6em;
+  text-transform: capitalize;
+  margin: 30px;
+}
+
+.container .add-notes {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 5px 20px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.container .add-notes:hover {
+  background-color: #00fc00;
+  color: white;
+}
+.container .clear {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 5px 20px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+.container .clear:hover {
+  background-color: red;
+  color: white;
+}
+
+.container ul {
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 30px;
+  justify-content: center;
+}
+
+.container ul .note {
+  position: relative;
+  margin-top: 20px;
+  width: fit-content;
+}
+
+.container ul .note .note-content {
+  background-color: white;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+  text-align: left;
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  width: 200px;
+}
+
+.buttons-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container ul .note .save,
+.container ul .note .delete,
+.container ul .note .edit {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container ul .note .save:hover {
+  background-color: #00fc00;
+  color: white;
+}
+
+.container ul .note .delete:hover {
+  background-color: red;
+  color: white;
+}
+
+.container ul .note .edit:hover {
+  background-color: #ffff00;
+}
